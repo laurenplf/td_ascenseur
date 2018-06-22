@@ -7,6 +7,9 @@ PROG = elevator
 
 all : $(PROG)
 
+clean :
+	rm*.o
+
 $(PROG) : main.o ascenseur.o
 	$(CC) $(LDFLAGS) -o $@ main.o ascenseur.o
 
